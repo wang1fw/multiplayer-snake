@@ -1,0 +1,21 @@
+# 依赖
+node_modules/
+
+# 运行时生成的账号、会话数据（含密码哈希，不要提交）
+data/
+
+# 编辑器 / 工具本地状态
+.codeartsdoer/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# 日志与环境变量
+*.log
+.env
+.env.*
+
+# 测试与调试产物
+_smooth.html
+_probe*.png

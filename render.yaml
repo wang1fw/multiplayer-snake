@@ -1,0 +1,14 @@
+# Render 一键部署配置（可选）
+# 用法：Render 控制台 → New + → Blueprint → 选择这个 GitHub 仓库
+# 这个项目必须有 Node.js 后端（Express + Socket.IO），GitHub Pages 之类的静态托管跑不起来。
+services:
+  - type: web
+    name: multiplayer-snake
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: 20.11.1
